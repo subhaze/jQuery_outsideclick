@@ -8,9 +8,7 @@ Since there are multiple ways for events to get trigger within jQuery this event
 Event String | Event Action
 -------------|--------------
 _outsideclick.user_ | will only trigger if the user created the event via a click.
-
 _outsideclick.trigger_ | will only trigger if you've programmatically triggered a `click` event via `trigger`
-
 _outsideclick_ | will trigger regardless of how the event was created.
 
 
