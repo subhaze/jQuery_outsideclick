@@ -1,0 +1,54 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mocha Tests</title>
+	<link rel="stylesheet" href="/test/vendor/mocha/mocha.css" />
+</head>
+<body>
+	<div class="some-container one">
+		<div>one</div>
+		<ul>
+			<li>asdf</li>
+			<li>asdf2</li>
+			<li>asdf3</li>
+		</ul>
+		<div class="some-container two">
+			<div>two</div>
+			<ul>
+				<li>asdf</li>
+				<li>asdf2</li>
+				<li>asdf3</li>
+			</ul>
+		</div>
+	</div>
+	<div class="some-container three">
+		<div>three</div>
+		<ul>
+			<li>asdf</li>
+			<li>asdf2</li>
+			<li>asdf3</li>
+		</ul>
+	</div>
+	<div class="some-container four">
+		<div>four</div>
+		<ul>
+			<li>asdf</li>
+			<li>asdf2</li>
+			<li>asdf3</li>
+		</ul>
+	</div>
+	<script src="/test/vendor/jquery.js"></script>
+	<script src="/outsideclick.js"></script>
+	<script src="/test/vendor/expect.js"></script>
+	<script src="/test/vendor/mocha/mocha.js"></script>
+	<script>
+		mocha.setup('bdd');
+		mocha.reporter('tap');
+	</script>
+	<script src="/test/test.js"></script>
+	<script>
+		mocha.globals(['jQuery']);
+		mocha.run();
+	</script>
+</body>
+</html>
