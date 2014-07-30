@@ -1,6 +1,9 @@
 ###outsideclick
 ####Custom jQuery event
 
+[![browser support](https://ci.testling.com/subhaze/jQuery_outsideclick.png)
+](https://ci.testling.com/subhaze/jQuery_outsideclick)
+
 This custom event triggers when the user/code triggers a click outside of the element.
 
 Since there are multiple ways for events to get trigger within jQuery this event has two optional namespaces available.
