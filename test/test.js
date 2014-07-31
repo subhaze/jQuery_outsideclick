@@ -46,7 +46,7 @@ describe('outsideclick tests', function(){
 			}, timeout);
 		});
 		it('should not fire on .one when body click triggered', function(done){
-			$('.one').on('outsideclick.user', function(){
+			$('.one').on('outsideclick.mouse', function(){
 				fired = true;
 			});
 			$('body').trigger('click');
@@ -56,7 +56,7 @@ describe('outsideclick tests', function(){
 			}, timeout);
 		});
 		it('should fire on .one when body click fired', function(done){
-			$('.one').on('outsideclick.user', function(){
+			$('.one').on('outsideclick.mouse', function(){
 				fired = true;
 				done();
 			});

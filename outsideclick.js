@@ -6,7 +6,7 @@ jQuery.event.special.outsideclick = {
 		function _clickHandler(e){
 			var handleClick = true;
 			var mouseUsed = 'button' in e;
-			if(namespace === 'user' && !mouseUsed){
+			if(namespace === 'mouse' && !mouseUsed){
 				handleClick = false;
 			}else if(namespace === 'trigger' && mouseUsed){
 				handleClick = false;
